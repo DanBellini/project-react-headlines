@@ -1,0 +1,85 @@
+#root {
+  max-width: 1200px;
+  padding: 2rem;
+  text-align: center;
+  background-color: red;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-headlines{
+  height: 400px;
+  background-color: blue;
+  display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-headline{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  background-color: aqua;
+}
+
+.latest-headlines{
+  height: 100%;
+  width: 55%;
+  margin: 10px;
+  display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+  background-color: aquamarine;
+}
+
+.latest-headlines > div{
+  margin: 5px;
+  height: 98%;
+  background-color: blueviolet;
+}
+
+.stories{ 
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media (max-width: 1200px){
+  .latest-headlines{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 980px){
+  .main-headlines{
+    height: 700px;
+    flex-direction: column;
+  }
+  .first-headline{
+    width: 100%;
+    justify-content: center;
+  }
+  .latest-headlines{
+    width: 100%;
+  }
+}
+
+@supports (-webkit-scrollbar: none) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
