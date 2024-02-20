@@ -1,8 +1,10 @@
 #root {
   max-width: 1200px;
+  width: 100%;
+  height: 100vh;
   padding: 2rem;
   text-align: center;
-  background-color: red;
+  background-color: #fda59b;
   display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +19,6 @@
 
 .main-headlines{
   height: 400px;
-  background-color: blue;
   display: flex;
     flex-direction: row;
     align-content: center;
@@ -28,32 +29,33 @@
   height: 100%;
   width: 40%;
   display: flex;
-  background-color: aqua;
+  border: 5px solid black;
 }
 
 .latest-headlines{
   height: 100%;
   width: 55%;
   margin: 10px;
+  border: 5px solid black;
   display: flex;
     flex-direction: row;
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
-  background-color: aquamarine;
 }
 
 .latest-headlines > div{
   margin: 5px;
   height: 98%;
-  background-color: blueviolet;
+  border: 5px solid black;
 }
 
 .stories{ 
   width: 100%;
-  height: 200px;
+  height: 400px;
   margin: 10px;
-  overflow-x: auto;
+  border: 5px solid black;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
